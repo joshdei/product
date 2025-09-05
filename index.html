@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My First GitHub Page</title>
+  <title>My Projects - GitHub Page</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -14,10 +14,10 @@
       text-align: center;
     }
     header {
-      padding: 50px 20px;
+      padding: 40px 20px;
     }
     h1 {
-      font-size: 3rem;
+      font-size: 2.5rem;
       margin-bottom: 10px;
     }
     p {
@@ -37,6 +37,50 @@
     a.button:hover {
       background: #d62839;
     }
+
+    /* Projects Section */
+    .projects {
+      margin: 40px auto;
+      max-width: 1000px;
+      padding: 0 20px;
+    }
+    .projects h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .projects ul {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .projects li {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 15px;
+      transition: transform 0.3s;
+    }
+    .projects li:hover {
+      transform: scale(1.03);
+    }
+    .projects img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .projects a {
+      color: #f1faee;
+      font-size: 1.1rem;
+      text-decoration: underline;
+      display: inline-block;
+      margin-top: 5px;
+    }
+    .projects a:hover {
+      color: #a8dadc;
+    }
+
     footer {
       margin-top: 60px;
       padding: 20px;
@@ -47,11 +91,30 @@
 <body>
   <header>
     <h1>🚀 Welcome to My Website</h1>
-    <p>This is my first site hosted on GitHub Pages!</p>
-    <a class="button" href="https://github.com" target="_blank">Visit My GitHub</a>
+    <p>This is my website I have built.</p>
+    <a class="button" href="https://wa.me/2348135836125" target="_blank">💬 Chat on WhatsApp to Book</a>
   </header>
+
+  <section class="projects">
+    <h2>🌐 Projects I Have Done</h2>
+    <ul>
+      <li>
+        <img src="img/bank.png" alt="Bank Project">
+        <a href="http://bank.expertkryptwares.org/" target="_blank">Bank Expert Kryptwares</a>
+      </li>
+      <li>
+        <img src="img/broker.png" alt="Broker Project">
+        <a href="http://expertkryptwares.org/" target="_blank">Expert Kryptwares</a>
+      </li>
+      <li>
+        <img src="img/bank2.png" alt="Digifox Project">
+        <a href="http://digifoxempire.org/" target="_blank">Digifox Empire</a>
+      </li>
+    </ul>
+  </section>
+
   <footer>
-    <p>&copy; 2025 My GitHub Page</p>
+    <p>&copy; 2025 My Page</p>
   </footer>
 </body>
 </html>
